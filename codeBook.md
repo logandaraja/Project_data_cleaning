@@ -33,7 +33,7 @@ The clean data file names clean_data_project_q5.txt has 68 columns  that capture
 * Mean_value_of fBodyBodyGyroMag_mean: This represents the average value of fBodyBodyGyroMag_mean recorded for the subject while performing the given activity. 
  
 * Mean_value_of fBodyBodyGyroJerkMag_mean: This represents the average value of fBodyBodyGyroJerkMag_mean recorded for the subject while performing the given activity. 
-===
+
 * Mean_value_of tBodyAcc_standard_deviation_Axes:  here the exes means one of X, Y or Z. This represent the average value of the tBodyAcc_standard_deviation_Axes for the subject performing the given activity. For example, the data was recorded when subject was WALKING for several times, say 90.
 * Mean_value_of tGravityAcc_standard_deviation_Axes: This represent the average value of the tGravityAcc_standard_deviation along one of the exes for the subject performing the given activity. 
 * Mean_value_of tBodyAccJerk_standard_deviation_Axes: This represent the average value of the tBodyAccJerk_standard_deviation along one of the exes for the subject performing the given activity. 
