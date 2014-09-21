@@ -4,14 +4,14 @@ The data set was on recognizing human activities using smartphone. The raw form 
 
 The project involves writing R scripts to achieve the following 5 steps
 
- 1. Merges the training and the test sets to create one data set.
+ 1. Merges the training and the test sets to create one data set. 
  2. Extracts only the measurements on the mean and standard deviation for each measurement. 
  3. Uses descriptive activity names to name the activities in the data set
  4. Appropriately labels the data set with descriptive variable names. 
  5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## Step 1
-To achieve the first step, X_test.txt and X_train.text files are read into x_test and x_train respectively. brined is used to merge x_test and x_train into x_merged. The known activity of each observation is recoded (coding of activity) in a file prefixed Y (Y_train.txt and Y_test.txt). Each file is read and combined activities are in Y_merged (again we have used brined). The people participated in the experiment are stored in files prefixed by subject (subject_train.txt, subject_test.txt). The combined subject is in subject_merged. The order of combining training and test instances must be preserved across all the data sets. We have used appended test instances after training instances. 
+To achieve the first step, X_test.txt and X_train.text files are read into x_test and x_train respectively. Here we assume that the columns of X_train and X_test are of the same order as shown in feature.txt file. The function rbind is used to merge x_test and x_train into x_merged. The known activity of each observation is recoded in files Y_train.txt and Y_test.txt. Each file is read and combined activities are in Y_merged (again we have used rbind. The people participated in the experiment are stored in files having prefixed subject (subject_train.txt, subject_test.txt). The combined subject is in subject_merged. The order of combining training and test instances must be preserved across all the data sets. We have maintained the train data frames are followed by test data frames.
 
 Results of step 1.
 The merged data of X-train.txt and X_test.txt is in data frame x_merged
